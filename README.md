@@ -38,7 +38,7 @@ The car models and brands are stored on an RDBMS at the server side (store).
 3.	TECHNOLOGIES FOR:
 
 	BACKEND:
-	JAVASCRIPT and HTML with NETBEANS;
+	JAVASCRIPT and HTML;
 
 	FRONTEND:
 	BOOTSTRAP.

@@ -167,56 +167,55 @@ The car models and brands are stored on an RDBMS at the server side (store).
 	In the database there is an ID for each car and it is incremented automatically by the number of cars added. Adding a new car  in the database  is done by selecting the brand in the Brand field, adding the model in the Model field, adding the power in the Power field, selecting the status in the Status field, adding the year in the Year field, adding the price in the Price field, adding the turnover in the Turnover, adding the cc in the Cubic Capacity field, adding the number of seats in the Seating field, adding the vehicle type in the Vehicle Type field, adding the picture by pressing the Choose File button and pressing the Add button:
 
 	addmodels.jsp:
-	<br><Br><center>
-	    <h2 style="color:black">Add Model Here</h2>
-	    <table>
-		<form action="addmodelsact.jsp" method="post">
-			<tr><th>Brand</th><th><select  name="brand" required="" style="width:198px">
-				<option value="" style="color: black">Select Brand</option>
-				<option value="Oldsmobile" style="color: black">Oldsmobile</option>
-				<option value="Mercedes-Benz" style="color: black">Mercedes-Benz</option>
-				<option value="Ford" style="color: black">Ford</option>
-				<option value="Buick" style="color: black">Buick</option>
-				<option value="Chevrolet" style="color: black">Chevrolet</option>
-				<option value="BMW" style="color: black">BMW</option>
-				<option value="Shelby" style="color: black">Shelby</option>
-				<option value="Nissan" style="color: black">Nissan</option>
-				<option value="Dodge" style="color: black">Dodge</option>
-				<option value="Toyota" style="color: black">Toyota</option>
-				<option value="Ferrari" style="color: black">Ferrari</option> 
-			</select></th></tr> 
+		<br><Br><center>
+		    <h2 style="color:black">Add Model Here</h2>
+		    <table>
+			<form action="addmodelsact.jsp" method="post">
+				<tr><th>Brand</th><th><select  name="brand" required="" style="width:198px">
+					<option value="" style="color: black">Select Brand</option>
+					<option value="Oldsmobile" style="color: black">Oldsmobile</option>
+					<option value="Mercedes-Benz" style="color: black">Mercedes-Benz</option>
+					<option value="Ford" style="color: black">Ford</option>
+					<option value="Buick" style="color: black">Buick</option>
+					<option value="Chevrolet" style="color: black">Chevrolet</option>
+					<option value="BMW" style="color: black">BMW</option>
+					<option value="Shelby" style="color: black">Shelby</option>
+					<option value="Nissan" style="color: black">Nissan</option>
+					<option value="Dodge" style="color: black">Dodge</option>
+					<option value="Toyota" style="color: black">Toyota</option>
+					<option value="Ferrari" style="color: black">Ferrari</option> 
+				</select></th></tr> 
+				<tr>
+		<th>Model</th>      <th> <input type="text" placeholder="Model" name="model" required="" autocomplete="off"></th></tr><tr><th></th></tr><tr><th></th></tr><tr><th></th></tr> 
+			  <tr><th>Status</th><th><select  name="status" required="" style="width:198px">
+					<option value="" style="color: black">Select Status</option>
+					<option value="New" style="color: black">New</option>
+					<option value="Up and Coming" style="color: black">Up and Coming</option> 
+			 </select></th></tr> 
+			 <tr>
+		<th>Vehicle Type</th><th><input type="text" placeholder="Vehicle Type" name="vehicle type" required="" autocomplete="off">  </th></tr><tr><th></th></tr><tr><th></th></tr><tr><th></th></tr>   
+			 <tr>
+					<th>Year</th>  <th> <input type="text" placeholder="Year" name="year" required="" autocomplete="off"></th></tr><tr><th></th></tr><tr><th></th></tr><tr><th></th></tr>
+			 <tr>
+					<th>Price</th>  <th><input type="text" placeholder="Price" name="price" required="" autocomplete="off"></th></tr><tr><th></th></tr><tr><th></th></tr><tr><th></th></tr>
+			 <tr>
+					<th>Turnover</th><th> <input type="text" placeholder="Turnover" name="turnover" required="" autocomplete="off"> </th></tr><tr><th></th></tr><tr><th></th></tr><tr><th></th></tr>
+			 <tr>
+					<th>Cubic Capacity</th><th><input type="text" placeholder="Cubic Capacity" name="cc" required="" autocomplete="off">  </th></tr><tr><th></th></tr><tr><th></th></tr><tr><th></th></tr>
+			 <tr>
+					<th>Power</th><th><input type="text" placeholder="Power" name="power" required="" autocomplete="off">  </th></tr><tr><th></th></tr><tr><th></th></tr><tr><th></th></tr>
+			 <tr>
+				<th>Seating</th><th> <input type="text" placeholder="Seating Capacity" name="seating" required="" autocomplete="off">  </th></tr><tr><th></th></tr><tr><th></th></tr><tr><th></th></tr>
 			<tr>
-	<th>Model</th>      <th> <input type="text" placeholder="Model" name="model" required="" autocomplete="off"></th></tr><tr><th></th></tr><tr><th></th></tr><tr><th></th></tr> 
-		  <tr><th>Status</th><th><select  name="status" required="" style="width:198px">
-				<option value="" style="color: black">Select Status</option>
-				<option value="New" style="color: black">New</option>
-				<option value="Up and Coming" style="color: black">Up and Coming</option> 
-		 </select></th></tr> 
-		 <tr>
-	<th>Vehicle Type</th><th><input type="text" placeholder="Vehicle Type" name="vehicle type" required="" autocomplete="off">  </th></tr><tr><th></th></tr><tr><th></th></tr><tr><th></th></tr>   
-		 <tr>
-				<th>Year</th>  <th> <input type="text" placeholder="Year" name="year" required="" autocomplete="off"></th></tr><tr><th></th></tr><tr><th></th></tr><tr><th></th></tr>
-		 <tr>
-				<th>Price</th>  <th><input type="text" placeholder="Price" name="price" required="" autocomplete="off"></th></tr><tr><th></th></tr><tr><th></th></tr><tr><th></th></tr>
-		 <tr>
-				<th>Turnover</th><th> <input type="text" placeholder="Turnover" name="turnover" required="" autocomplete="off"> </th></tr><tr><th></th></tr><tr><th></th></tr><tr><th></th></tr>
-		 <tr>
-				<th>Cubic Capacity</th><th><input type="text" placeholder="Cubic Capacity" name="cc" required="" autocomplete="off">  </th></tr><tr><th></th></tr><tr><th></th></tr><tr><th></th></tr>
-		 <tr>
-				<th>Power</th><th><input type="text" placeholder="Power" name="power" required="" autocomplete="off">  </th></tr><tr><th></th></tr><tr><th></th></tr><tr><th></th></tr>
-		 <tr>
-			<th>Seating</th><th> <input type="text" placeholder="Seating Capacity" name="seating" required="" autocomplete="off">  </th></tr><tr><th></th></tr><tr><th></th></tr><tr><th></th></tr>
-		<tr>
-				<th>Image</th><th><input type="file" placeholder="Image" name="image" required="" autocomplete="off">  </th></tr><tr><th></th></tr><tr><th></th></tr><tr><th></th></tr>
-				<tr><th></th></tr><tr><th></th></tr><tr><th></th></tr>
-	       <tr>
-				<th> </th><th><input type="submit" value="Add"> </th></tr> 
-	</form>
-	</table>
-
+					<th>Image</th><th><input type="file" placeholder="Image" name="image" required="" autocomplete="off">  </th></tr><tr><th></th></tr><tr><th></th></tr><tr><th></th></tr>
+					<tr><th></th></tr><tr><th></th></tr><tr><th></th></tr>
+		       <tr>
+					<th> </th><th><input type="submit" value="Add"> </th></tr> 
+		</form>
+		</table>
 	addmodelsact:
 	<%
-	   String brands = request.getParameter("brand");
+	   		String brands = request.getParameter("brand");
 			String model = request.getParameter("model");
 			String year = request.getParameter("year");
 			String price = request.getParameter("price");
@@ -247,70 +246,70 @@ The car models and brands are stored on an RDBMS at the server side (store).
 			  }catch (Exception e) {
 			    out.println(e.getMessage());
 			 }
-		    %>
+	 %>
 
 	![Figure 5](https://user-images.githubusercontent.com/26704350/88904976-6fa40380-d25e-11ea-8328-91f2773bdee8.png)
 						Figure 5 Adding a new model
 
 	Editing the vehicles allows their renaming.
-	<%
-			String id = request.getParameter("id");
-			String brands = request.getParameter("brand");
-			String model = request.getParameter("model");
-			String year = request.getParameter("year");
-			String price = request.getParameter("price");
-			String to = request.getParameter("turnover");
-			String power = request.getParameter("power");
-			String cc = request.getParameter("cc");
-			String seating = request.getParameter("seating");
-			String image = request.getParameter("image");
-			String status = request.getParameter("status");
-			String vt = request.getParameter("vehicle type");
-			try { 
-			    Class.forName("com.mysql.jdbc.Driver");
-			    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/autovintage", "AndreiLungu", "marcelino");
-			    String sq1 = "UPDATE `models` SET `brand`= ?,`model`= ?,`year`= ?, `price`= ?,`turnover`= ?,`power`= ?,`cc`= ?,`seating`= ?,`image`= ?,`status`= ?,`vehicle type`= ? WHERE `id`= "+id+""; 
-			    PreparedStatement ps = con.prepareStatement(sq1); 
-			    ps.setString(1,brands);
-			    ps.setString(2,model);
-			    ps.setString(3,year);
-			    ps.setString(4,price);
-			    ps.setString(5,to);	
-			    ps.setString(6,power);
-			    ps.setString(7,cc);
-			    ps.setString(8,seating);
-			    ps.setString(9,image);
-			    ps.setString(10,status);
-			    ps.setString(11,vt); 
-			    int x=ps.executeUpdate();
-			    if(x > 0) {
-				response.sendRedirect("adminhome.jsp?m2=Update successful");
-			    }  else {
-				response.sendRedirect("adminhome.jsp?m2=There is a problem with the update");
-			    }
-			}catch (Exception e) {
-			    out.println(e.getMessage());
-			 }
-		    %>
+			<%
+				String id = request.getParameter("id");
+				String brands = request.getParameter("brand");
+				String model = request.getParameter("model");
+				String year = request.getParameter("year");
+				String price = request.getParameter("price");
+				String to = request.getParameter("turnover");
+				String power = request.getParameter("power");
+				String cc = request.getParameter("cc");
+				String seating = request.getParameter("seating");
+				String image = request.getParameter("image");
+				String status = request.getParameter("status");
+				String vt = request.getParameter("vehicle type");
+				try { 
+				    Class.forName("com.mysql.jdbc.Driver");
+				    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/autovintage", "AndreiLungu", "marcelino");
+				    String sq1 = "UPDATE `models` SET `brand`= ?,`model`= ?,`year`= ?, `price`= ?,`turnover`= ?,`power`= ?,`cc`= ?,`seating`= ?,`image`= ?,`status`= ?,`vehicle type`= ? WHERE `id`= "+id+""; 
+				    PreparedStatement ps = con.prepareStatement(sq1); 
+				    ps.setString(1,brands);
+				    ps.setString(2,model);
+				    ps.setString(3,year);
+				    ps.setString(4,price);
+				    ps.setString(5,to);	
+				    ps.setString(6,power);
+				    ps.setString(7,cc);
+				    ps.setString(8,seating);
+				    ps.setString(9,image);
+				    ps.setString(10,status);
+				    ps.setString(11,vt); 
+				    int x=ps.executeUpdate();
+				    if(x > 0) {
+					response.sendRedirect("adminhome.jsp?m2=Update successful");
+				    }  else {
+					response.sendRedirect("adminhome.jsp?m2=There is a problem with the update");
+				    }
+				}catch (Exception e) {
+				    out.println(e.getMessage());
+				 }
+			 %>
 
 	Deleting of the models executes from the page deletemodelact.jsp, which follows the car’s id in order to execute:
-	<% 
-			String id = request.getParameter("id"); 
-			try {
-			    Class.forName("com.mysql.jdbc.Driver");
-			    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/autovintage", "AndreiLungu", "marcelino"); 
-			    String sq1 = "DELETE FROM `models` WHERE `id` = "+id+"";
-			    PreparedStatement ps = con.prepareStatement(sq1); 
-			    int x = ps.executeUpdate();
-			    if(x > 0) {
-				response.sendRedirect("adminhome.jsp?m3=Model Deleted");   
-			    }else {
-				response.sendRedirect("adminhome.jsp?m3=Deletion Failed");   
-			    }
-			} catch (Exception e) {
-			    out.println(e.getMessage());
-			 }
-		    %>
+			    <% 
+				String id = request.getParameter("id"); 
+				try {
+				    Class.forName("com.mysql.jdbc.Driver");
+				    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/autovintage", "AndreiLungu", "marcelino"); 
+				    String sq1 = "DELETE FROM `models` WHERE `id` = "+id+"";
+				    PreparedStatement ps = con.prepareStatement(sq1); 
+				    int x = ps.executeUpdate();
+				    if(x > 0) {
+					response.sendRedirect("adminhome.jsp?m3=Model Deleted");   
+				    }else {
+					response.sendRedirect("adminhome.jsp?m3=Deletion Failed");   
+				    }
+				} catch (Exception e) {
+				    out.println(e.getMessage());
+				 }
+			    %>
 	4.2.2	The online vehicles dealership
 	Just like in the administration section, the graphical part of the online dealershipis based of a front-end web template, much like the previous one, bootstrap.min.css, which is linked with the file  index.html: 
 	<link rel=”stylesheet” href=https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css integrity="sha384-Cw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -320,73 +319,72 @@ The car models and brands are stored on an RDBMS at the server side (store).
 					
 	In the header zone we have the logo of the dealership inserted. 
 
-	<a class = “navbar-brand” #>
-	<img src=”logo.png” height=”15%” width=”10%”   alt=””>&nbspAUTOVINTAGE.com
-	</a>
+		<a class = “navbar-brand” #>
+		<img src=”logo.png” height=”15%” width=”10%”   alt=””>&nbspAUTOVINTAGE.com
+		</a>
 
 	On the left side we have a search bar in which we search for cars. The search bar is completely made in another page, searchact.jsp, and is called by the following script :
 
-	<form class="form-inline my-1 my-1" action="searchact.jsp">
-	<input name = "key" class="form-control mr-1 " type="search" placeholder="Search" aria-label="Search">
-	<a href="searchact.jsp"><img src="baseline-search-24px.svg"></a>
-	</form> 
+		<form class="form-inline my-1 my-1" action="searchact.jsp">
+		<input name = "key" class="form-control mr-1 " type="search" placeholder="Search" aria-label="Search">
+		<a href="searchact.jsp"><img src="baseline-search-24px.svg"></a>
+		</form> 
 	A resultset prints all inputs from the table models and searches them by model or by brand:
-	<%
-	String key = request.getParameter("key");
-	Class.forName("com.mysql.jdbc.Driver");
-	Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/autovintage", "AndreiLungu", "marcelino");
-	 String q = "SELECT * FROM `models` WHERE `brand` LIKE'%"+key+"%' OR `model` LIKE '%"+key+"%' ";
-	 Statement st = con.createStatement();
-	 ResultSet rs = st.executeQuery(q); 
-	%>
-	<div class="card-columns"> 
-	    <%
-	    while(rs.next()){ 
-	    %> 
-	  <div class="card">
-	    <img class="card-img-top" src="images/<%=rs.getString("image")%>" alt="Card image cap">
-	    <div class="card-body">
-	      <h5 class="card-title"><%=rs.getString("model")%></h5>
-	     <p class="card-text"><b>Model: </b> <%=rs.getString("model")%> <br><b>Year: </b> <%=rs.getString("year")%> <br><b>Price: </b><%=rs.getString("price")%> Euro <br><b>Turnover: </b><%=rs.getString("turnover")%> km<br/></br><%=rs.getString("cc")%> cc</br><%=rs.getString("seating")%> seater</br></p>
-	<a href="pyment.jsp?model=<%=rs.getString("model")%>&year=<%=rs.getString("year")%>&price=<%=rs.getString("price")%>&turnover=<%=rs.getString("turnover")%>&image=<%=rs.getString("image")%>&brand=<%=rs.getString("brand")%>"><button type="button" class="btn btn-outline-danger">Buy</button></a>   
-	    </div>
-	  </div> 
-	  <%
-	    }
-	  %>
-
+		<%
+		String key = request.getParameter("key");
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/autovintage", "AndreiLungu", "marcelino");
+		 String q = "SELECT * FROM `models` WHERE `brand` LIKE'%"+key+"%' OR `model` LIKE '%"+key+"%' ";
+		 Statement st = con.createStatement();
+		 ResultSet rs = st.executeQuery(q); 
+		%>
+		<div class="card-columns"> 
+		    <%
+		    while(rs.next()){ 
+		    %> 
+		  <div class="card">
+		    <img class="card-img-top" src="images/<%=rs.getString("image")%>" alt="Card image cap">
+		    <div class="card-body">
+		      <h5 class="card-title"><%=rs.getString("model")%></h5>
+		     <p class="card-text"><b>Model: </b> <%=rs.getString("model")%> <br><b>Year: </b> <%=rs.getString("year")%> <br><b>Price: </b><%=rs.getString("price")%> Euro <br><b>Turnover: </b><%=rs.getString("turnover")%> km<br/></br><%=rs.getString("cc")%> cc</br><%=rs.getString("seating")%> seater</br></p>
+		<a href="pyment.jsp?model=<%=rs.getString("model")%>&year=<%=rs.getString("year")%>&price=<%=rs.getString("price")%>&turnover=<%=rs.getString("turnover")%>&image=<%=rs.getString("image")%>&brand=<%=rs.getString("brand")%>"><button type="button" class="btn btn-outline-danger">Buy</button></a>   
+		    </div>
+		  </div> 
+		  <%
+		    }
+		  %>
 	If the user who is surfing the site is not registered, he has the possibility to register, using the registration form after pushing the sign up button in userreg.jsp. The following syntax introduces the users’s dates in the database,  in the users table. 
 
 	![Figure 7](https://user-images.githubusercontent.com/26704350/88905059-8b0f0e80-d25e-11ea-8e3f-2b7fe2d0c60a.png)
 					Figure 7 userreg.jsp
-	<%
-	    String username= request.getParameter("username");
-	    String password = request.getParameter("password");
-	    String email= request.getParameter("email");
-	    String mobile = request.getParameter("mobile"); 
-	    Class.forName("com.mysql.jdbc.Driver");
-	    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/autovintage", "AndreiLungu", "marcelino");
-	    String sql="INSERT INTO `users`(`username`, `password`, `email`, `mobile`) VALUES (?,?,?,?)";
-	    PreparedStatement st = con.prepareStatement(sql); 
-	   st.setString(1,username);
-	   st.setString(2,password);
-	   st.setString(3,email);
-	   st.setString(4,mobile);
-	   int i=st.executeUpdate();
-	   if(i>0) {
-		response.sendRedirect("user.jsp?msg=success")
-	   }
-	%>
+			<%
+			    String username= request.getParameter("username");
+			    String password = request.getParameter("password");
+			    String email= request.getParameter("email");
+			    String mobile = request.getParameter("mobile"); 
+			    Class.forName("com.mysql.jdbc.Driver");
+			    Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/autovintage", "AndreiLungu", "marcelino");
+			    String sql="INSERT INTO `users`(`username`, `password`, `email`, `mobile`) VALUES (?,?,?,?)";
+			    PreparedStatement st = con.prepareStatement(sql); 
+			   st.setString(1,username);
+			   st.setString(2,password);
+			   st.setString(3,email);
+			   st.setString(4,mobile);
+			   int i=st.executeUpdate();
+			   if(i>0) {
+				response.sendRedirect("user.jsp?msg=success")
+			   }
+			%>
 	![FIgure 8](https://user-images.githubusercontent.com/26704350/88905311-ce697d00-d25e-11ea-80cb-5492306df54a.png)
 					Figure 8 Registering  clients
 
 	If the user has been successfully registered, he is redirected to the user.jsp page, where he is announced that he has been successfully registered and he can now login with the username and password. 
 
-	<%
-	if (request.getParameter("msg") != null) {%>
-		<script>alert('User Registered Successfully...!');</script>
-	<%}
-	%>
+		<%
+		if (request.getParameter("msg") != null) {%>
+			<script>alert('User Registered Successfully...!');</script>
+		<%}
+		%>
 	![Figure 9](https://user-images.githubusercontent.com/26704350/88905379-e4773d80-d25e-11ea-8fe8-a3259e5c8bc1.png)
 					Figure 9 Successful registration
 
@@ -396,73 +394,73 @@ The car models and brands are stored on an RDBMS at the server side (store).
 
 	If the login has been successfully done, there will be a message “Hello user”. Otherwise, there will be a warning message: “Login failed” and a link to reload the login.
 	In the home section we can search a car by brand, if we click on one of the brands there will be a gallery of images of cars from the respective brands; in case there are no cars yet, the server will respond that there are no cars from that brand.
-	<div id="band" class="container text-center">
-	<h3  class="text-center" align="left"> Search by Brands</h3>
-	<br>
-			<div class="row">
+			<div id="band" class="container text-center">
+			<h3  class="text-center" align="left"> Search by Brands</h3>
+			<br>
+					<div class="row">
+					<div class="col-sm-4">
+			<a href="cars.jsp?val=Toyota">
+						<img src="t.jpg" class="img person" alt="Couldn't load image" width="255" height="255">
+					</a>
+					<p class="text-center"><strong>Toyota</strong></p><br>
+			</div>
 			<div class="col-sm-4">
-	<a href="cars.jsp?val=Toyota">
-				<img src="t.jpg" class="img person" alt="Couldn't load image" width="255" height="255">
+			<a href="cars.jsp?val=Ford" >
+			<img src="for.jpg" class="img person" alt="Couldn't load image" width="255" height="255">
 			</a>
-			<p class="text-center"><strong>Toyota</strong></p><br>
-	</div>
-	<div class="col-sm-4">
-	<a href="cars.jsp?val=Ford" >
-	<img src="for.jpg" class="img person" alt="Couldn't load image" width="255" height="255">
-	</a>
-	<p class="text-center"><strong>Ford</strong></p><br>
-	</div>
-	<div class="col-sm-4">
-	<a href="cars.jsp?val=Ferrari" >
-				<img src="fer.jpg" class="img person" alt="Couldn't load image" width="255" height="255">
-			</a>
-			<p class="text-center"><strong>Ferrari</strong></p><br>
-	</div>
-	<div class="col-sm-4">
-	<a href="cars.jsp?val=BMW">
-			<img src="b.jpg" class="img person" alt="Couldn't load image" width="255" height="255">
-			</a>
-			<p class="text-center"><strong>BMW</strong></p><br>
-	</div>
-	<div class="col-sm-4">
-	<a href="cars.jsp?val=Nissan">
-				<img src="n.jpg" class="img person" alt="Couldn't load image" width="255" height="255">
-			</a>
-			<p class="text-center"><strong>Nissan</strong></p><br>
-	</div>
-	<div class="col-sm-4">
-	<a href="cars.jsp?val=Chevrolet">
-			<img src="c.jpg" class="img person" alt="Couldn't load image" width="255" height="255">
-			</a>
-			<p class="text-center"><strong>Chevrolet</strong></p><br>
-	</div>
+			<p class="text-center"><strong>Ford</strong></p><br>
+			</div>
+			<div class="col-sm-4">
+			<a href="cars.jsp?val=Ferrari" >
+						<img src="fer.jpg" class="img person" alt="Couldn't load image" width="255" height="255">
+					</a>
+					<p class="text-center"><strong>Ferrari</strong></p><br>
+			</div>
+			<div class="col-sm-4">
+			<a href="cars.jsp?val=BMW">
+					<img src="b.jpg" class="img person" alt="Couldn't load image" width="255" height="255">
+					</a>
+					<p class="text-center"><strong>BMW</strong></p><br>
+			</div>
+			<div class="col-sm-4">
+			<a href="cars.jsp?val=Nissan">
+						<img src="n.jpg" class="img person" alt="Couldn't load image" width="255" height="255">
+					</a>
+					<p class="text-center"><strong>Nissan</strong></p><br>
+			</div>
+			<div class="col-sm-4">
+			<a href="cars.jsp?val=Chevrolet">
+					<img src="c.jpg" class="img person" alt="Couldn't load image" width="255" height="255">
+					</a>
+					<p class="text-center"><strong>Chevrolet</strong></p><br>
+			</div>
 
 	This functionality is also done in cars.jsp to make sure that the are cars from that brand,by using  resultsets and statements:
-	<%
-	 Class.forName("com.mysql.jdbc.Driver");
-	 Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/autovintage", "AndreiLungu", "marcelino"); 
-	 String val = request.getParameter("val"); 
-	 %> 
-	 <% 
-	 String q = "SELECT * FROM `models` WHERE `brand` = '"+val+"'";
-	 Statement st = con.createStatement();
-	 ResultSet rs = st.executeQuery(q); 
-	%>
-	<div class="card-columns"> 
-	    <%
-		while(rs.next()){ 
-	    %> 
-	  <div class="card">
-		 <img class="card-img-top" src="images/<%=rs.getString("image")%>" alt="Card image cap">
-		<div class="card-body">
-	      <h4 class="card-title"><b>Brand:</b> <%=rs.getString("brand")%></h4>
-	      <p class="card-text"><b>Model: </b> <%=rs.getString("model")%> <br><b>Vehicle Type: </b><%=rs.getString("vehicle type")%> <br><b>Year: </b> <%=rs.getString("year")%> <br><b>Price: </b><%=rs.getString("price")%> Euro <br><b>Turnover: </b><%=rs.getString("turnover")%> km<br><b>Power: </b><%=rs.getString("power")%> hp <br/></br><%=rs.getString("cc")%> cc</br><%=rs.getString("seating")%> seater</br></p>
-	      <a href="payment.jsp?model=<%=rs.getString("model")%>&year=<%=rs.getString("year")%>&price=<%=rs.getString("price")%>&turnover=<%=rs.getString("turnover")%>&image=<%=rs.getString("image")%>&brand=<%=rs.getString("brand")%>"><button type="button" class="btn btn-outline-danger">Buy</button></a>  
-	    </div>
-	  </div> 
-	  <% 
-	 }
-	%>
+			<%
+			 Class.forName("com.mysql.jdbc.Driver");
+			 Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/autovintage", "AndreiLungu", "marcelino"); 
+			 String val = request.getParameter("val"); 
+			 %> 
+			 <% 
+			 String q = "SELECT * FROM `models` WHERE `brand` = '"+val+"'";
+			 Statement st = con.createStatement();
+			 ResultSet rs = st.executeQuery(q); 
+			%>
+			<div class="card-columns"> 
+			    <%
+				while(rs.next()){ 
+			    %> 
+			  <div class="card">
+				 <img class="card-img-top" src="images/<%=rs.getString("image")%>" alt="Card image cap">
+				<div class="card-body">
+			      <h4 class="card-title"><b>Brand:</b> <%=rs.getString("brand")%></h4>
+			      <p class="card-text"><b>Model: </b> <%=rs.getString("model")%> <br><b>Vehicle Type: </b><%=rs.getString("vehicle type")%> <br><b>Year: </b> <%=rs.getString("year")%> <br><b>Price: </b><%=rs.getString("price")%> Euro <br><b>Turnover: </b><%=rs.getString("turnover")%> km<br><b>Power: </b><%=rs.getString("power")%> hp <br/></br><%=rs.getString("cc")%> cc</br><%=rs.getString("seating")%> seater</br></p>
+			      <a href="payment.jsp?model=<%=rs.getString("model")%>&year=<%=rs.getString("year")%>&price=<%=rs.getString("price")%>&turnover=<%=rs.getString("turnover")%>&image=<%=rs.getString("image")%>&brand=<%=rs.getString("brand")%>"><button type="button" class="btn btn-outline-danger">Buy</button></a>  
+			    </div>
+			  </div> 
+			  <% 
+			 }
+			%>
 	![Figure 11](https://user-images.githubusercontent.com/26704350/88905509-0a044700-d25f-11ea-933f-faaa7db1ec7c.png)
 						Figure 11 Cars
 
@@ -471,28 +469,28 @@ The car models and brands are stored on an RDBMS at the server side (store).
 						Figure 12 Search by category
 
 	This functionality is done only when we visualize the cars as users and uses the following syntax:
-	<div id="mySidebar" class="sidebar">
-		 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> x</a>
-		 <a href="#m1">Model</a>
-		<div id="list">
-			<a href=#><h5><li>Up and Coming</li></h5></a>
-			<a href="#m1"><h5><li>New</li></h5></a>
-		</div>
-	  <a href="#m1">Price</a>
-		<div id="list">
-			<a href=#><h5><li>High to low</li></h5></a>
-			<a href="#"><h5><li>Low to high</li></h5></a>
-		</div>
-	  <a href="#m1">Turnover</a>
-		<div id="list">
-			<a href="lowtohigh.jsp?under=10"><h5><li>under 50000 km</li></h5></a>
-			<ahref="lowtohigh.jsp?between=10-15"><h5><li>50000-150000 km</li></h5></a>
-			<ahref="lowtohigh.jsp?above=15"><h5><li>150000 km & above</li></h5></a>
-		</div>
-	</div>
-	<div id="main" >
-	  <button class="openbtn" onclick="openNav()">Search
-	    </button>
+			<div id="mySidebar" class="sidebar">
+				 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"> x</a>
+				 <a href="#m1">Model</a>
+				<div id="list">
+					<a href=#><h5><li>Up and Coming</li></h5></a>
+					<a href="#m1"><h5><li>New</li></h5></a>
+				</div>
+			  <a href="#m1">Price</a>
+				<div id="list">
+					<a href=#><h5><li>High to low</li></h5></a>
+					<a href="#"><h5><li>Low to high</li></h5></a>
+				</div>
+			  <a href="#m1">Turnover</a>
+				<div id="list">
+					<a href="lowtohigh.jsp?under=10"><h5><li>under 50000 km</li></h5></a>
+					<ahref="lowtohigh.jsp?between=10-15"><h5><li>50000-150000 km</li></h5></a>
+					<ahref="lowtohigh.jsp?above=15"><h5><li>150000 km & above</li></h5></a>
+				</div>
+			</div>
+			<div id="main" >
+			  <button class="openbtn" onclick="openNav()">Search
+			    </button>
 	![Figure 13](https://user-images.githubusercontent.com/26704350/88905641-299b6f80-d25f-11ea-8fab-00f1071b8b79.png)
 						Figure 13 Cars searched by the Ford brand
 						
@@ -505,87 +503,87 @@ The car models and brands are stored on an RDBMS at the server side (store).
 	  }
 
 	After pushing the Buy button, we are redirected to the page in which we make our payment, payment.jsp. The car has already been put in the bookings table with the help of the code from the page  ubuy.jsp:
-	<%
-	String username = session.getAttribute("username").toString();
-		String to = request.getParameter("turnover");
-		String model = request.getParameter("model");
-		String year = request.getParameter("year");
-		String price= request.getParameter("price");
-		String image = request.getParameter("image");
-		String brand = request.getParameter("brand"); 
-		String fullname = request.getParameter("fullname"); 
-		String address = request.getParameter("address"); 
-		String zip = request.getParameter("zip"); 
-		String state = request.getParameter("state"); 
-		String city = request.getParameter("city"); 
-		String email = request.getParameter("email");         
-		String cardname = request.getParameter("cardname"); 
-			String cardnumber = request.getParameter("cardnumber"); 
-			String expmonth = request.getParameter("expmonth"); 
-			String expyear = request.getParameter("expyear"); 
-			String cvv = request.getParameter("cvv");    
-	Class.forName("com.mysql.jdbc.Driver");
-		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/autovintage", "AndreiLungu", "marcelino");
-		String sql="INSERT INTO `bookings`(`username`, `brand`, `model`,`year`,`price`, `turnover`, `image`, `fullname`, `email`, `address`, `city`, `state`, `zip`, `cardname`, `cardnumber`, `expmonth`, `expyear`, `cvv`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
-		PreparedStatement st = con.prepareStatement(sql);
-		st.setString(1,username);
-		st.setString(2,brand);
-		st.setString(3,model);
-		st.setString(4,year);
-		st.setString(5,price);
-		st.setString(6,to);
-		st.setString(7,image);
-		st.setString(8,fullname);
-		st.setString(9,email);
-		st.setString(10,address);
-		st.setString(11,city);
-		st.setString(12,state);
-			st.setString(13,zip);
-		st.setString(14,cardname);
-			st.setString(15,cardnumber);
-			st.setString(16,expmonth);
-		     st.setString(17,expyear);          
-		     st.setString(18,cvv); 
-		int i=st.executeUpdate();
-		if(i>0) {
-				response.sendRedirect("userhome.jsp?msg1=success"); 
-		}
-	%>
+		<%
+			String username = session.getAttribute("username").toString();
+			String to = request.getParameter("turnover");
+			String model = request.getParameter("model");
+			String year = request.getParameter("year");
+			String price= request.getParameter("price");
+			String image = request.getParameter("image");
+			String brand = request.getParameter("brand"); 
+			String fullname = request.getParameter("fullname"); 
+			String address = request.getParameter("address"); 
+			String zip = request.getParameter("zip"); 
+			String state = request.getParameter("state"); 
+			String city = request.getParameter("city"); 
+			String email = request.getParameter("email");         
+			String cardname = request.getParameter("cardname"); 
+				String cardnumber = request.getParameter("cardnumber"); 
+				String expmonth = request.getParameter("expmonth"); 
+				String expyear = request.getParameter("expyear"); 
+				String cvv = request.getParameter("cvv");    
+		Class.forName("com.mysql.jdbc.Driver");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/autovintage", "AndreiLungu", "marcelino");
+			String sql="INSERT INTO `bookings`(`username`, `brand`, `model`,`year`,`price`, `turnover`, `image`, `fullname`, `email`, `address`, `city`, `state`, `zip`, `cardname`, `cardnumber`, `expmonth`, `expyear`, `cvv`) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+			PreparedStatement st = con.prepareStatement(sql);
+			st.setString(1,username);
+			st.setString(2,brand);
+			st.setString(3,model);
+			st.setString(4,year);
+			st.setString(5,price);
+			st.setString(6,to);
+			st.setString(7,image);
+			st.setString(8,fullname);
+			st.setString(9,email);
+			st.setString(10,address);
+			st.setString(11,city);
+			st.setString(12,state);
+				st.setString(13,zip);
+			st.setString(14,cardname);
+				st.setString(15,cardnumber);
+				st.setString(16,expmonth);
+			     st.setString(17,expyear);          
+			     st.setString(18,cvv); 
+			int i=st.executeUpdate();
+			if(i>0) {
+					response.sendRedirect("userhome.jsp?msg1=success"); 
+			}
+		%>
 	![Figure 14](https://user-images.githubusercontent.com/26704350/88905719-3e780300-d25f-11ea-8793-ac89327b9b78.png)
 					Figure 14 Cart List
 
 	In this page we have the option of removing the cars from the cart.
 	On the page with the possibility of buying vehicles there are printed the brand, the model, the year, the price, the turnover,  the cubic capacity and the number of seats. If there are no payments the server warns us with a message “No payments on display”.
-	<%
-		String username = session.getAttribute("username").toString();
-		Class.forName("com.mysql.jdbc.Driver");
-		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/autovintage", "AndreiLungu", "marcelino"); 
-		String q1 = "SELECT * FROM `bookings` WHERE `username` = '"+username+"'";
-		Statement st1 = con.createStatement();
-		ResultSet rs1 = st1.executeQuery(q1);
-		if(rs1.next()) { 
-			String q = "SELECT * FROM `bookings` WHERE `username` = '"+username+"'";
-			Statement st = con.createStatement();
-			ResultSet rs = st.executeQuery(q); 
-	%>
-	<div class="card-columns"> 
-	    <%
-		while(rs.next()) { 
-	    %> 
-	  <div class="card">
-		 <img class="card-img-top" src="images/<%=rs.getString("image")%>" alt="Card image cap">
-		<div class="card-body">
-		<h4 class="card-title"><b>Brand:</b> <%=rs.getString("brand")%></h4>
-		<p class="card-text"><b>Model: </b> <%=rs.getString("model")%> <br><b>Year: </b> <%=rs.getString("year")%> <br><b>Price: </b> <%=rs.getString("price")%> Euro <br><b>Turnover: </b><%=rs.getString("turnover")%> km<br/></p>
-			<a href="cancelbooking.jsp?model=<%=rs.getString("model")%>&year=<%=rs.getString("year")%>&price=<%=rs.getString("price")%>&turnover=<%=rs.getString("turnover")%>&brand=<%=rs.getString("brand")%>"><button type="button" class="btn btn-outline-danger">Cancel Payment</button></a> 
-	    </div>
-	  </div> 
-	  <%
-	    }
-	    }else { 
-		 out.println("<center><font color='red' size='4'><br><br><br>No payments to display..</font><br><br><br><br><br><br><br><br><br><br><br><br></center>");
-	 }
-	  %>
+		<%
+			String username = session.getAttribute("username").toString();
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/autovintage", "AndreiLungu", "marcelino"); 
+			String q1 = "SELECT * FROM `bookings` WHERE `username` = '"+username+"'";
+			Statement st1 = con.createStatement();
+			ResultSet rs1 = st1.executeQuery(q1);
+			if(rs1.next()) { 
+				String q = "SELECT * FROM `bookings` WHERE `username` = '"+username+"'";
+				Statement st = con.createStatement();
+				ResultSet rs = st.executeQuery(q); 
+		%>
+		<div class="card-columns"> 
+		    <%
+			while(rs.next()) { 
+		    %> 
+		  <div class="card">
+			 <img class="card-img-top" src="images/<%=rs.getString("image")%>" alt="Card image cap">
+			<div class="card-body">
+			<h4 class="card-title"><b>Brand:</b> <%=rs.getString("brand")%></h4>
+			<p class="card-text"><b>Model: </b> <%=rs.getString("model")%> <br><b>Year: </b> <%=rs.getString("year")%> <br><b>Price: </b> <%=rs.getString("price")%> Euro <br><b>Turnover: </b><%=rs.getString("turnover")%> km<br/></p>
+				<a href="cancelbooking.jsp?model=<%=rs.getString("model")%>&year=<%=rs.getString("year")%>&price=<%=rs.getString("price")%>&turnover=<%=rs.getString("turnover")%>&brand=<%=rs.getString("brand")%>"><button type="button" class="btn btn-outline-danger">Cancel Payment</button></a> 
+		    </div>
+		  </div> 
+		  <%
+		    }
+		    }else { 
+			 out.println("<center><font color='red' size='4'><br><br><br>No payments to display..</font><br><br><br><br><br><br><br><br><br><br><br><br></center>");
+		    }
+		  %>
 	![Figure 15](https://user-images.githubusercontent.com/26704350/88905721-3f109980-d25f-11ea-8fdf-ca87dad6dfd8.png)
 						Figure 15 No payments warning
 
@@ -594,34 +592,34 @@ The car models and brands are stored on an RDBMS at the server side (store).
 						Figure 16 Payment method
 
 	If we click the “Reserve” button,we are directed to a page where we make an apoointment with the dealer himself and pay the car with cash,uappointment.jsp. In the page we put the username and the date of the appointment. The car has already been put in the appointment table with the help of the code from the page  uappointment1.jsp:
-	<%
-	    String username = session.getAttribute("username").toString();
-	    String to = request.getParameter("turnover");
-	    String model = request.getParameter("model");
-	    String year = request.getParameter("year");
-	    String price= request.getParameter("price");
-	    String image = request.getParameter("image");
-	    String brand = request.getParameter("brand"); 
-	    String date1 = request.getParameter("date"); 
-	    String email = request.getParameter("email"); 
-	   Class.forName("com.mysql.jdbc.Driver");
-	   Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/autovintage", "AndreiLungu", "marcelino");
-	   String sql="INSERT INTO `appointment`(`username`, `turnover`, `model`, `year`, `price`, `image`, `brand`, `date`, `email`) VALUES (?,?,?,?,?,?,?,?,?)";
-	   PreparedStatement st = con.prepareStatement(sql); 
-	   st.setString(1,username);
-	   st.setString(2,email);
-	   st.setString(3,brand);
-	   st.setString(4,model);
-	   st.setString(5,year);
-	   st.setString(6,price);
-	   st.setString(7,to);
-	   st.setString(8,image);
-	   st.setString(9,date1);
-	   int i=st.executeUpdate();
-	   if(i>0) {
-		response.sendRedirect("userhome.jsp?msg2=success"); 
-	    }
-	   %>
+		<%
+		    String username = session.getAttribute("username").toString();
+		    String to = request.getParameter("turnover");
+		    String model = request.getParameter("model");
+		    String year = request.getParameter("year");
+		    String price= request.getParameter("price");
+		    String image = request.getParameter("image");
+		    String brand = request.getParameter("brand"); 
+		    String date1 = request.getParameter("date"); 
+		    String email = request.getParameter("email"); 
+		   Class.forName("com.mysql.jdbc.Driver");
+		   Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/autovintage", "AndreiLungu", "marcelino");
+		   String sql="INSERT INTO `appointment`(`username`, `turnover`, `model`, `year`, `price`, `image`, `brand`, `date`, `email`) VALUES (?,?,?,?,?,?,?,?,?)";
+		   PreparedStatement st = con.prepareStatement(sql); 
+		   st.setString(1,username);
+		   st.setString(2,email);
+		   st.setString(3,brand);
+		   st.setString(4,model);
+		   st.setString(5,year);
+		   st.setString(6,price);
+		   st.setString(7,to);
+		   st.setString(8,image);
+		   st.setString(9,date1);
+		   int i=st.executeUpdate();
+		   if(i>0) {
+			response.sendRedirect("userhome.jsp?msg2=success"); 
+		    }
+		%>
 
 	![Figure 17](https://user-images.githubusercontent.com/26704350/88905715-3ddf6c80-d25f-11ea-8758-d1694bdfecd5.png)
 						Figure 17 Appointment
@@ -631,32 +629,32 @@ The car models and brands are stored on an RDBMS at the server side (store).
 						Figure 18 Cancel appointment
 						
 	We can also add feedback about the vehicle once it has been put in the cart.From there, we are linked to the page ufeedback.jsp. Once we push the feedback button, we will be headed to another page,ufeedback1act.jsp,. The car has already been put in the feedback table with the help of the code from that page.
-	<%
-	    String username = session.getAttribute("username").toString();
-	    String to = request.getParameter("turnover");
-	    String model = request.getParameter("model");
-	    String year = request.getParameter("year");
-	    String price= request.getParameter("price");
-	    String image = request.getParameter("image");
-	    String brand = request.getParameter("brand"); 
-	    String feedback = request.getParameter("feedback"); 
-	   Class.forName("com.mysql.jdbc.Driver");
-	   Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/autovintage", "AndreiLungu", "marcelino");
-	   String sql="INSERT INTO `feedback`(`username`, `brand`, `model`,`year`, `price`, `turnover`, `image`, `feedback`) VALUES (?,?,?,?,?,?,?,?)";
-	   PreparedStatement st = con.prepareStatement(sql); 
-	   st.setString(1,username);
-	   st.setString(2,brand);
-	   st.setString(3,model);
-	   st.setString(4,year);
-	   st.setString(5,price);
-	   st.setString(6,to);
-	   st.setString(7,image);
-	   st.setString(8,feedback);
-	   int i=st.executeUpdate();
-	   if(i>0) {
-		response.sendRedirect("ufeedback.jsp?msg=success"); 
-	    }
-	   %>
+		<%
+		    String username = session.getAttribute("username").toString();
+		    String to = request.getParameter("turnover");
+		    String model = request.getParameter("model");
+		    String year = request.getParameter("year");
+		    String price= request.getParameter("price");
+		    String image = request.getParameter("image");
+		    String brand = request.getParameter("brand"); 
+		    String feedback = request.getParameter("feedback"); 
+		   Class.forName("com.mysql.jdbc.Driver");
+		   Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/autovintage", "AndreiLungu", "marcelino");
+		   String sql="INSERT INTO `feedback`(`username`, `brand`, `model`,`year`, `price`, `turnover`, `image`, `feedback`) VALUES (?,?,?,?,?,?,?,?)";
+		   PreparedStatement st = con.prepareStatement(sql); 
+		   st.setString(1,username);
+		   st.setString(2,brand);
+		   st.setString(3,model);
+		   st.setString(4,year);
+		   st.setString(5,price);
+		   st.setString(6,to);
+		   st.setString(7,image);
+		   st.setString(8,feedback);
+		   int i=st.executeUpdate();
+		   if(i>0) {
+			response.sendRedirect("ufeedback.jsp?msg=success"); 
+		   }
+		%>
 
 	There are two extra features. One for insurance and the other for discount. Both of them printing a message about a potential discount and how to claim insurance. The discount is put in the adddiscount.jsp.
 	![FIgure 19](https://user-images.githubusercontent.com/26704350/88905718-3e780300-d25f-11ea-9996-d4d0f1ae8b0b.png)
